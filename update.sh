@@ -1,6 +1,6 @@
 #!/bin/sh
 
-BASE_URL="https://github.com/mayswind/AriaNg"
+BASE_URL="https://hub.fastgit.org/mayswind/AriaNg"
 LATEST_TAG=$(curl -s "${BASE_URL}/releases/latest" | sed -En 's/.+\/tag\/([.0-9A-Za-z]+)".+/\1/p')
 
 # https://github.com/mayswind/AriaNg/releases/download/1.1.4/AriaNg-1.1.4-AllInOne.zip

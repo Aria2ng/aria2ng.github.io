@@ -8,5 +8,5 @@ curl -L -# -C - "${BASE_URL}/releases/download/${LATEST_TAG}/AriaNg-${LATEST_TAG
 
 unzip -o new.zip && rm -f new.zip
 
-# Enable insecure protocol
+# Allow insecure protocol and disallow shutdown operation
 sed -Ei 's/"https"===[A-Za-z_][0-9A-Za-z_]*\.protocol\(\)/ false/; s/ng-click="shutdown\(\)"/ng-click="shutdown\(\)" disabled="disabled"/' index.html

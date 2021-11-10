@@ -8,3 +8,5 @@ What has been modified?
 
 1. Allow insecure RPC under HTTPS (for some browsers)
 2. Disallow shutdown operation (useful for 7x24 servers)
+3. Allow download InfoHash directly (for some BT sites)
+

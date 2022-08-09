@@ -9,7 +9,7 @@ set -e
 # Apply patches
 cd source
 for p in ../patches/*.patch; do
-  git am "$p"
+  git apply "$p"
 done
 
 # Build
